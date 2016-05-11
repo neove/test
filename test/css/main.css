@@ -67,16 +67,9 @@ header.car-info .forward{
 	width:  65%;
 }
 .maintain-info input{
-	width:75%;
+	width:80%;
 	border: none;
 	color: #b1afb0;
-}
-.maintain-info  button{
-	border: none;
-	float: right;
-	width: 20px;
-	height: 40px;
-	
 }
 input[name='submit']{
 	width: 90%;
@@ -89,14 +82,14 @@ input[name='submit']{
 	color: #fff;
 	border: none;
 }
-.maintain-info .date button{
-	background:url(../img/date-btn.png) no-repeat 50% 50% ;
+.maintain-info .date {
+	background:url(../img/date-btn.png) no-repeat 90% 50% ;
 }
-.maintain-info .spot button{
-	background:url(../img/spot-btn.png) no-repeat 50% 50% ;
+.maintain-info .spot {
+	background:url(../img/spot-btn.png) no-repeat 90% 50% ;
 }
-.maintain-info .item button{
-	background:url(../img/item-btn.png) no-repeat 50% 50% ;
+.maintain-info .item {
+	background:url(../img/item-btn.png) no-repeat 90% 50% ;
 }
 
 /***********3---maintain record style************************/
@@ -104,6 +97,13 @@ input[name='submit']{
 	padding: 15px;
 	position: relative;
 	background-color: #fff;
+	height: 36px;
+	overflow: hidden;
+	-webkit-transition:height .3s;
+    -moz-transition:   height .3s;
+    -ms-transition:    height .3s;
+    -o-transition:     height .3s;
+    transition:        height .3s;
 }
 .maintain-record .title{
 	border-bottom: 1px solid #ccc;
@@ -140,6 +140,11 @@ input[name='submit']{
 	position: absolute;
 	top: 26px;
 	right: 15px;
+	-webkit-transition:transform .3s;
+    -moz-transition:   transform .3s;
+    -ms-transition:    transform .3s;
+    -o-transition:     transform .3s;
+    transition:        transform .3s;
 	background:url('../img/forward-btn.png') no-repeat 50% 50%;
 }
 .record-name,.record-date{
@@ -172,7 +177,7 @@ input[name='submit']{
 
 }
 /***********4--item pannel style************************/
-.item-pannel{
+.item-pannel,.date-pannel,.spot-pannel{
 	width: 100%;
 	height:100%;
 	position: absolute;
@@ -181,21 +186,21 @@ input[name='submit']{
 	background:rgba(0,0,0,0.6); 
 	display: none;
 }
-.item-select{
+.item-select,.date-select,.spot-select{
 	width: 80%;
 	margin:0 auto;
-	padding: 10px 15px;
+	padding: 15px;
 	color: #fff;
 	background-color: #fff;
 	position: relative;
-	top: 100px;
+	top: 150px;
 	border-radius: 6px;
 }
 .item-select span{
 	display: inline-block;
 	padding: 5px 8px;
 	margin:0 5px 5px 0;
-	background: #999999 ;
+	background: #999;
 	width: 24%;
 	text-align: center;
 	border-radius: 6px;
@@ -205,6 +210,28 @@ input[name='submit']{
 	width: 100%;
 
 }
+/***********5--date pannel style************************/
+.date-select select,.spot-select select{
+	border: none;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #20988e;
+	color: #fff;
+	width: 30%;
+	text-align: center;
+	height: 1.8em;
+	margin-bottom: 20px;
+}
+/***********5--spot pannel style************************/
+input[name='area']{
+	border: none;
+	display: block;
+	width: 80%;
+	margin-bottom:20px;
+	border-bottom: 1px solid #20988e;
+}
+
+
 
 /***********color style************************/
 header,.maintain-info{
@@ -213,9 +240,6 @@ header,.maintain-info{
 body{
     background-color:#ecebea;
     color: #656767;
-}
-.maintain-info input[name='submit']{
-
 }
 .maintain-record .add-record{
 	background:#20988e;
@@ -227,4 +251,3 @@ body{
 .maintain-record .record .record-date{
 	color:#b1b0b1;
 }
-

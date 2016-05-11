@@ -21,27 +21,24 @@
 	        <div class="date">
 	        	<label for="date">保养时间</label>
 	        	<div class="content">
-	        		<input type="text" id="date" value="2015年11月23日" /> 
-	        		<button></button>
+	        		<input  readonly="readonly"type="text" id="date" /> 
 	        	</div>
 	        </div>
 
 	        <div class="spot">
 	        	<label for="spot">保养地点</label>
 	        	<div class="content">
-	        		<input type="text" id="spot" name="spot"value="青岛市市北区福州北路..." />
-	        		<button></button>
+	        		<input  readonly="readonly" type="text" id="spot" name="spot"/>
 	        	</div>	        	
 	        </div>
 
 	        <div class="item">
 	        	<label for="item">保养项目</label>
 	        	<div class="content">
-	        		<input type="text" id="item" name="item">
-	        		<button></button>
+	        		<input  readonly="readonly" type="text" id="item" name="item">
 	        	</div>	     
 	        </div>
-	        <input type="submit" value="提交" name="submit" id="submit1" />
+	        <input type="submit" value="提交" name="submit" id="form_submit" />
 	    </div><!--end maintain-info-->
 
 	    <div class="maintain-record">
@@ -50,10 +47,10 @@
 	        	 <button>保养项目</button>
 	        </div>
 	        <button class="add-record">+添加保养记录</button>
-	       <div class="record">
+	       <div class="record" id="record">
 	           <span class="record-name">保养里程数:12 314km</span>
 	       	   <span class="record-date">2015-9-12</span>
-	       	   <button class="forward"></button>
+	       	   <button class="forward" id="record_btn"></button>
 	       	   <div class="record-info">
 	       	        <p class="spot-des">
 	       	        	<span>保养地点</span>
@@ -67,14 +64,12 @@
 	       	        	<span>保养项目</span>
 	       	        	<span>机油滤清器  空调滤清器  空调滤清器 火花塞机油滤清器</span>
 	       	        </p>
-
-
 	       	   </div>	
 	       </div>
 	    	
 	    </div><!--end maintain-record-->
 		
-	    <div class="item-pannel">
+	    <div class="item-pannel" id="item_pannel">
 	    	<div class="item-select">
 	    		<span>燃油滤清器</span>
 	    		<span>空调滤清器</span>
@@ -88,22 +83,37 @@
 	    		<span>火花塞</span>
 	    		<span>蓄电池</span>
 	    		<span>变速箱</span>
-	    		<input type="submit" value="提交"  name="submit" id="submit2"/>
+	    		<input type="submit" value="提交"  name="submit" id="item_submit"/>
 	    	</div>
+	    </div><!--end item-pannel--> 
+	    <div class="date-pannel" id="date_pannel"> 
+	        <div class="date-select">
+	           	 <select name="year" id="year">
+	                
+	             </select>
+	             <select name="month" id="month">
+	             	
+	             </select>
+	             <select name="day" id="day">
+	             	
+	             </select>
+	             <input type="submit" value="提交"  name="submit" id="date_submit"/>
+	        </div>
+	     </div><!--end date-pannel--> 
 
-	    </div>
-
+	     <div class="spot-pannel" id="spot_pannel"> 
+	        <div class="spot-select">
+	           	 <select name="province" id="province">
+	             </select>
+	             <select name="city" id="city">
+	             </select>
+	             <input type="text" name="area" id="area" placeholder="区/县/街道办事处" />
+	             <input type="submit" value="提交"  name="submit" id="spot_submit"/>
+	        </div>
+	     </div>  <!--end spot-pannel--> 
 
 
 	</div><!--end wrapper-->
-
-
-	 
-
-
-
-
-
 	<script src="js/main.js"></script>	
 	</body>
 </html>
