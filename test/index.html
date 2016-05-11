@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+	<div class="wrapper">
+	    <header class="car-info">
+	    	<img src="img/logo.png" class="logo">
+	    	<p>
+	    		<span class="name">阿尔法 罗密欧</span>
+	    		<span class="model">科帕奇 2014款 1.4T</span>
+	    	</p>
+	    	<button class="forward"></button>	    	
+	    </header>
+	    <div class="maintain-info">
+	        <div class="date">
+	        	<label for="date">保养时间</label>
+	        	<div class="content">
+	        		<input type="text" id="date" value="2015年11月23日" /> 
+	        		<button></button>
+	        	</div>
+	        </div>
+
+	        <div class="spot">
+	        	<label for="spot">保养地点</label>
+	        	<div class="content">
+	        		<input type="text" id="spot" name="spot"value="青岛市市北区福州北路..." />
+	        		<button></button>
+	        	</div>	        	
+	        </div>
+
+	        <div class="item">
+	        	<label for="item">保养项目</label>
+	        	<div class="content">
+	        		<input type="text" id="item" name="item">
+	        		<button></button>
+	        	</div>	     
+	        </div>
+	        <input type="submit" value="提交" name="submit" id="submit1" />
+	    </div><!--end maintain-info-->
+
+	    <div class="maintain-record">
+	        <div class="title">
+	        	 <h2>保养记录</h2>
+	        	 <button>保养项目</button>
+	        </div>
+	        <button class="add-record">+添加保养记录</button>
+	       <div class="record">
+	           <span class="record-name">保养里程数:12 314km</span>
+	       	   <span class="record-date">2015-9-12</span>
+	       	   <button class="forward"></button>
+	       	   <div class="record-info">
+	       	        <p class="spot-des">
+	       	        	<span>保养地点</span>
+	       	        	<span>青岛中瑞</span>
+	       	        </p>
+	       	        <p class="price-des">
+	       	        	<span>开票金额</span>
+	       	        	<span>￥1000.00</span>
+	       	        </p>
+	       	        <p class="item-des">
+	       	        	<span>保养项目</span>
+	       	        	<span>机油滤清器  空调滤清器  空调滤清器 火花塞机油滤清器</span>
+	       	        </p>
+
+
+	       	   </div>	
+	       </div>
+	    	
+	    </div><!--end maintain-record-->
+		
+	    <div class="item-pannel">
+	    	<div class="item-select">
+	    		<span>燃油滤清器</span>
+	    		<span>空调滤清器</span>
+	    		<span>空气滤清器</span>
+	    		<span>发动机机油</span>
+	    		<span>机油滤清器</span>
+	    		<span>全部火花塞</span>
+	    		<span>空调冷气/冷媒</span>
+	    		<span>刹车油</span>
+	    		<span>整车制动液</span>
+	    		<span>火花塞</span>
+	    		<span>蓄电池</span>
+	    		<span>变速箱</span>
+	    		<input type="submit" value="提交"  name="submit" id="submit2"/>
+	    	</div>
+
+	    </div>
+
+
+
+	</div><!--end wrapper-->
+
+
+	 
+
+
+
+
+
+	<script src="js/main.js"></script>	
+	</body>
+</html>
